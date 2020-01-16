@@ -1,0 +1,10 @@
+##Not a part of the actual serverless model
+
+the event for the definition in the serverless.yml will be in the form
+
+{
+	"input":{
+		"operand1":4,
+		"operand2": 5
+	}
+}

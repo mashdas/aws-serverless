@@ -1,0 +1,26 @@
+.swf-logo {
+    background-image: url("https://d2yymmf9l33ie1.cloudfront.net/SWF-e64610d24b6e458c257f1105d8aa926f4a524182.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.video-thumbnail {
+    background-image: url("https://d2yymmf9l33ie1.cloudfront.net/video-thumbnail-c59f8e1abe6240fc2b4feda913364da816bd3782.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 306px;
+    height: 172px;
+    cursor: pointer;
+}
+
+.the-guardian-logo {
+    background-image: url("https://d2yymmf9l33ie1.cloudfront.net/the-guardian-logo-d13af941a0d255696e576e119ebe2fb73e842cd5.png");
+}
+
+.yelp-logo {
+    background-image: url("https://d2yymmf9l33ie1.cloudfront.net/yelp-logo-a2778e38ff3eb28f1314caa8d97f3144d0871e0b.png");
+}
+
+.how-it-works {
+    background-image: url("https://d2yymmf9l33ie1.cloudfront.net/how-it-works-96c29f369420c34ab2a93f107bfcd4e736a76e30.png");
+}

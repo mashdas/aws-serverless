@@ -1,0 +1,44 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: SAM 101
+
+Globals:
+  Function:
+    MemorySize: 128
+    Runtime: nodejs8.10
+    Timeout: 5
+
+
+
+Resources:
+  eventLogger:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: logger.Handler
+      Events:
+        GetLogs:
+          Type: Api
+          Properties:
+            Path: /logs
+            Methof: get
+
+        FileUpload:
+          Type: S3
+          Properties:
+            Bucket: !Ref MyBucket
+            Events: s3:ObjectCreated:*    
+MyBucket:
+  Type: AWS::S3::Bucket
+
+
+  addNumbers:
+    Type: AWS::Serverless::Function
+    Properties:
+       Handler: add.handler
+       Timeout: 3  ##overwrites the previous common values in the Globals.Function
+       Events:
+        PostAdd:
+          Type: Api
+          Properties:
+            Path: /add
+            Method: post

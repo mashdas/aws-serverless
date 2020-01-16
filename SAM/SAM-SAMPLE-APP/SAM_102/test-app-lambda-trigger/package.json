@@ -1,0 +1,14 @@
+{
+  "name": "test-app-lambda-trigger",
+  "version": "1.0.0",
+  "description": ">>Command: sam local start-lambda O/P:you get an ip address as an endpoint on which the lambda service is running ##We can now trigger the lambda function from our application code using the AWS sdk.",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.596.0"
+  }
+}

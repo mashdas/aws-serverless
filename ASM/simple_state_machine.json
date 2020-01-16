@@ -1,0 +1,17 @@
+{
+  "StartAt":"calculate",
+  "States":{
+    "calculate":{
+      "Type":"Task",
+      "Resource":"arn:aws:lambda:ap-south-1:052884545342:function:calculator",
+      "InputPath":"$.lambda",//As input,a lambda object is passed to the state function
+      "ResultPath":"$.lambda.lambdaResult",//the output from the above lambda function is stored in a new object lambdaResult inside the lambda object,along with other proerpties of the origial input to the lambda function
+      "OutputPath":"$.lambda",//contains only the lambda property from the above result
+      "End":true
+    }
+  }
+}
+
+
+Input to the lambda function:
+
